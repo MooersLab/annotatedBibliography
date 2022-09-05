@@ -14,5 +14,18 @@ Manually add annote fields to the cited.bib file and enter your annotations ther
 Or, if you are more disciplined, you can add the annote fields in global.bib and repeat the extraction of the cited entries when you are finished.
 All of the entries in cited.bib will be used to make the annotated bibliography regardless of the presence or absence of the annote field.
 
-I store these files in a \url{annotatedBibliography} subfolder in my writing projects folder.
+I store these files in a *annotatedBibliography* subfolder in my writing projects folder.
 These file work fine on Overleaf.
+
+## Related projects of possible interest
+
+- [LaTeX manuscript template](https://github.com/MooersLab/manuscriptInLaTeX/edit/main/README.md)
+- [Writing log template](https://github.com/MooersLab/writingLogTemplate)
+- [Diary for 2022 in LaTeX](https://github.com/MooersLab/diary2022inLaTeX)
+- [Diary for 2023 in LaTeX](https://github.com/MooersLab/diary2023inLaTeX)
+- [latex-emacs profile](https://github.com/MooersLab/latex-emacs)
+- [snippets for latex-mode in Emacs](https://github.com/MooersLab/snippet-latex-mode)
+- [Quizzes about Emacs to improve recall of keybindings](https://github.com/MooersLab/qemacs)
+- [Slides from talk about LaTeX in Emacs](https://github.com/MooersLab/BerlinEmacsAugust2022)
+- [Slides from talk about GhostText](https://github.com/MooersLab/DSW22ghosttext)
+- [Vidoe link to talk about GhostText](https://mediasite.ouhsc.edu/Mediasite/Channel/python/watch/4da0872f028c4255ae12935655e911321d)
