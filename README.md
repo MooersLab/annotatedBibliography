@@ -28,4 +28,4 @@ These file work fine on Overleaf.
 - [Quizzes about Emacs to improve recall of keybindings](https://github.com/MooersLab/qemacs)
 - [Slides from talk about LaTeX in Emacs](https://github.com/MooersLab/BerlinEmacsAugust2022)
 - [Slides from talk about GhostText](https://github.com/MooersLab/DSW22ghosttext)
-- [Vidoe link to talk about GhostText](https://mediasite.ouhsc.edu/Mediasite/Channel/python/watch/4da0872f028c4255ae12935655e911321d)
+- [Video link to talk about GhostText](https://mediasite.ouhsc.edu/Mediasite/Channel/python/watch/4da0872f028c4255ae12935655e911321d)
