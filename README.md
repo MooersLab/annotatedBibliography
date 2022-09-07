@@ -14,8 +14,8 @@ Manually add annote fields to the AnnoBibMyBDA.bib file and enter your annotatio
 Or, if you are more disciplined, you can add the annote fields in global.bib and repeat the extraction of the cited entries when you are finished.
 All of the entries in cited.bib will be used to make the annotated bibliography regardless of the presence or absence of the annote field.
 
-I store these files in a *annotatedBibliography* subfolder in my writing projects folder.
-These file work fine on Overleaf.
+I store these files in a *annotatedBibliography* subfolder in my writing project's folder.
+These filed work fine on Overleaf.
 
 ## Related projects of possible interest
 
