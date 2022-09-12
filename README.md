@@ -2,7 +2,7 @@
 
 These files support the automated generation of the an annotated bibliography in LaTeX.
 The AnnoBib.tex file is the master file.
-It uses the annote field in the bibtex entry in cited.bib and the plain-annote.bst file.
+It uses the annote field in the BibTeX entry in cited.bib and the plain-annote.bst file.
 To write out the cited bib entries from global.bib, use the command line program **bibtool** with the main.tex file's corresponding main.aux file:
 
 ```bash
