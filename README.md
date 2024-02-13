@@ -21,10 +21,24 @@ Bibtool is distributed with LaTeX.
 
 Manually add annote fields to the AnnoBibMyBDA.bib file and enter your annotations there if you have not done so already.
 Or, if you are more disciplined, you can add the annote fields in global.bib and repeat the extraction of the cited entries when you are finished.
-All of the entries in cited.bib will be used to make the annotated bibliography regardless of the presence or absence of the annote field.
+All of the entries in `cited.bib` will be used to make the annotated bibliography regardless of the presence or absence of the annote field.
 
 I store these files in a *annotatedBibliography* subfolder in my writing project's folder.
 These files work on Overleaf, too.
+
+## Alternative bibliographic styles
+
+Alternatively, you can use the IEEEannot.bst bibliography which returns numbered entries in alphabetic order.
+
+## Annote fields with multiple paragraphs
+
+I have found no support for blank lines between paragraphs in the annotation.
+I wrap each paragraph in `\par{\noindent   .... }` to have the paragraphs printed in block format.
+I insert `\vspace{10pt}` between paragraphs to generate a blank line between paragraphs.
+
+## Support beyond text
+
+Display math and tables can be embedded in annote fields.
 
 ## Related projects of possible interest
 
