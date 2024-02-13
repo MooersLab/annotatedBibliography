@@ -47,7 +47,9 @@ You could do something similar to print the annotation in bold or italics.
 
 ## Support beyond text
 
-Display math and tables can be embedded in annote fields.
+Your annotated bibliograpy can be spiced up.
+Lists, display math, computer code blocks, figures, and tables can be embedded in annote fields.
+
 
 ## Related projects of possible interest
 
