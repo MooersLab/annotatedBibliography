@@ -36,6 +36,15 @@ I have found no support for blank lines between paragraphs in the annotation.
 I wrap each paragraph in `\par{\noindent   .... }` to have the paragraphs printed in block format.
 I insert `\vspace{10pt}` between paragraphs to generate a blank line between paragraphs.
 
+## Colored annotations
+
+You can color the annotation blue.
+
+- Load the color or xcolor package via the main.tex file.
+- Add the macro \color{blue} to the line in the bst file that describes the format of the annotation.
+
+You could do something similar to print the annotation in bold or italics.
+
 ## Support beyond text
 
 Display math and tables can be embedded in annote fields.
