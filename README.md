@@ -1,3 +1,6 @@
+![Version](https://img.shields.io/static/v1?label=annotatedBibliography=0.1&color=brightcolor)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+
 # Annotated bibliography template in LaTeX for specific writing projects
 
 These files support the automated generation of the an annotated bibliography in LaTeX.
