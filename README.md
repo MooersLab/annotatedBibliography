@@ -1,4 +1,4 @@
-![Version](https://img.shields.io/static/v1?label=annotatedBibliography=0.1&color=brightcolor)
+![Version](https://img.shields.io/static/v1?label=annotatedBibliography&message=0.2&color=brightcolor))
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 # Annotated bibliography template in LaTeX for specific writing projects
@@ -68,9 +68,7 @@ Lists, display math, computer code blocks, figures, and tables can be embedded i
 
 |Version      | Changes                                               | Date            |
 |:-----------:|:-----------------------------------------------------:|:---------------:|
-| Version 0.3 | First posted.                                         | 2024 January 22 |
-| Version 0.4 | Added subsections on data and code inventories.       | 2024 April 5    |
-| Version 0.5 | Added subsections on lists of videos and blogs.       | 2024 April 7    |
+| Version 0.2 | Added Update table to README.md                       | 2024 April 7    |
 
 ## Sources of Funding
 
