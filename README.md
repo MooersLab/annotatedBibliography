@@ -3,18 +3,18 @@
 
 # Annotated bibliography template in LaTeX for specific writing projects
 
-These files support the automated generation of the an annotated bibliography in LaTeX.
+These files support the automated generation of an annotated bibliography in LaTeX.
 The AnnoBib.tex file is the master file.
 It uses the annote field in the BibTeX entry in cited.bib and the plain-annote.bst file.
 
 To write out the cited bib entries from global.bib, use the command line program **bibtool** with the main.tex file's corresponding main.aux file:
  
-To generate a bib file of the papers cited in a manuscirpt, run the following code. 
+Run the following code to generate a bib file of the papers cited in a manuscript. 
 Note that main.tex is the manuscript file. 
 The main.aux file is hidden on Overleaf. 
 Find it under the "Logs and outputs" pulldown menu. 
 This command will preserve the letter case in the keycite. 
-The defualt behavior is to lower the case.
+The default behavior is to lower the case.
 
 ```bash
 bibtool --preserve.key.case=on -x main.aux > cited.bib
@@ -22,9 +22,9 @@ bibtool --preserve.key.case=on -x main.aux > cited.bib
 
 Bibtool is distributed with LaTeX.
 
-Manually add annote fields to the AnnoBibMyBDA.bib file and enter your annotations there if you have not done so already.
-Or, if you are more disciplined, you can add the annote fields in global.bib and repeat the extraction of the cited entries when you are finished.
-All of the entries in `cited.bib` will be used to make the annotated bibliography regardless of the presence or absence of the annote field.
+Manually add annote fields to the AnnoBibMyBDA.bib file and enter your annotations.
+Or, if you are more disciplined, you can add the annote fields in a global.bib file and repeat the extraction of the cited entries when you are finished.
+All entries in `cited.bib` will be used to make the annotated bibliography regardless of the presence or absence of the annote field.
 
 I store these files in a *annotatedBibliography* subfolder in my writing project's folder.
 These files work on Overleaf, too.
