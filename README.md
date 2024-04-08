@@ -63,6 +63,22 @@ Lists, display math, computer code blocks, figures, and tables can be embedded i
 - [Diary for 2023 in LaTeX](https://github.com/MooersLab/diary2023inLaTeX)
 - [latex-emacs profile](https://github.com/MooersLab/latex-emacs)
 - [snippets for latex-mode in Emacs](https://github.com/MooersLab/snippet-latex-mode)
+
+  ## Version History
+
+|Version      | Changes                                               | Date            |
+|:-----------:|:-----------------------------------------------------:|:---------------:|
+| Version 0.3 | First posted.                                         | 2024 January 22 |
+| Version 0.4 | Added subsections on data and code inventories.       | 2024 April 5    |
+| Version 0.5 | Added subsections on lists of videos and blogs.       | 2024 April 7    |
+
+## Sources of Funding
+
+- NIH: R01 CA242845
+- NIH: R01 AI088011
+- NIH: P30 CA225520 (PI: R. Mannel)
+- NIH P20GM103640 and P30GM145423 (PI: A. West)
+
 - [Quizzes about Emacs to improve recall of keybindings](https://github.com/MooersLab/qemacs)
 - [Slides from talk about LaTeX in Emacs at the Berlin Emacs Meetup Aug 31, 2022](https://github.com/MooersLab/BerlinEmacsAugust2022)
 - [Slides from talk about GhostText, Data Science Workshop, July 2022](https://github.com/MooersLab/DSW22ghosttext)
