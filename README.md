@@ -1,4 +1,4 @@
-![Version](https://img.shields.io/static/v1?label=annotatedBibliography&message=0.2&color=brightcolor))
+![Version](https://img.shields.io/static/v1?label=annotatedBibliography&message=0.2&color=brightcolor)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 # Annotated bibliography template in LaTeX for specific writing projects
