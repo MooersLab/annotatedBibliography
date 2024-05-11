@@ -5,8 +5,8 @@
 
 These files support the automated generation of an annotated bibliography in LaTeX.
 The *AnnoBib.tex* file is the master file.
-It uses the `annote` field in the BibTeX entry in *cited.bib*.
-Its style is set by *plain-annote.bst*, which must be present unless this file is stored in your library of files for LaTeX on your local computer.
+It uses the ** field in the BibTeX entry in *cited.bib*.
+Its style is set by *plain-.bst*, which must be present unless this file is stored in your library of files for LaTeX on your local computer.
 
 To write out the cited bib entries in a manuscript that come from *global.bib*, use the command line program **bibtool** with the main.tex file's corresponding main.aux file:
  
@@ -15,7 +15,7 @@ Note that main.tex is the manuscript file.
 The *main.aux* file is hidden on Overleaf. 
 Find it under the "Logs and outputs" pulldown menu. 
 
-The following command will preserve the letter case in the keycite. 
+The following command will preserve the letter case in the cite key. 
 The default behavior is to lower the case.
 
 ```bash
@@ -24,9 +24,9 @@ bibtool --preserve.key.case=on -x main.aux > cited.bib
 
 Bibtool is distributed with LaTeX.
 
-Manually add annote fields to the AnnoBibMyBDA.bib file and enter your annotations.
-Or, if you are more disciplined, you can add the annote fields in a *global.bib* file and repeat the extraction of the cited entries when you are finished.
-All entries in `cited.bib` will be used to make the annotated bibliography regardless of the presence or absence of the annote field.
+Manually add *annote* fields to the *AnnoBibMyBDA.bib* file and enter your annotations.
+Or, if you are more disciplined, you can add the *annote* fields in a *global.bib* file and repeat the extraction of the cited entries when you are finished.
+All entries in `cited.bib` will be used to create the annotated bibliography regardless of whether the *annote* field is present.
 
 I store these files in a *annotatedBibliography* subfolder in my writing project's folder.
 These files work on Overleaf, too.
@@ -35,7 +35,7 @@ These files work on Overleaf, too.
 
 Alternatively, you can use the *IEEEannot.bst* bibliography style file which returns numbered entries in alphabetic order.
 
-## Annote fields with multiple paragraphs
+##  Fields with multiple paragraphs
 
 I have found no support for blank lines between paragraphs in the annotation.
 I wrap each paragraph in `\par{\noindent   .... }` to have the paragraphs printed in block format.
@@ -46,14 +46,14 @@ I insert `\vspace{10pt}` between paragraphs to generate a blank line between par
 You can color the annotation blue.
 
 - Load the *color* or *xcolor* package with the `\usepackage{xcolor}` macro in the preamble of the *main.tex* file.
-- Add the macro `\color{blue}` to the line in the `*.bst` file that describes the format of the annote field.
+- Add the macro `\color{blue}` to the line in the `*.bst` file that describes the format of the *annote* field.
 
-You could print the annotation in bold or italics.
+You could also print the annotation in bold or italics.
 
 ## Support beyond text
 
-Your annotated bibliography can be spiced up.
-Lists, display math, computer code blocks, figures, and tables can be embedded in the annote fields.
+Your annotated bibliography can be spiced up:
+You can include lists, display math, computer code blocks, figures, and tables in the *annote* fields.
 
 
 ## Related projects of possible interest
