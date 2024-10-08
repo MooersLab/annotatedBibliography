@@ -74,7 +74,7 @@ You can include lists, display math, computer code blocks, figures, and tables i
 ## Version History
 
 |Version      | Changes                                               | Date            |
-|:-----------:|:-----------------------------------------------------:|:---------------:|
+|:------------|:------------------------------------------------------|:----------------|
 | Version 0.2 | Added Update table to README.md                       | 2024 April 7    |
 | Version 0.3 | Edit the README.md heavily.                           | 2024 April 17   |
 | Version 0.4 | Edit the README.md heavily.                           | 2024 October 8   |
