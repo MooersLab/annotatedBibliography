@@ -3,10 +3,10 @@
 
 # Annotated bibliography template in LaTeX for specific writing projects
 
-These files support the automated generation of an annotated bibliography in LaTeX.
+These files support the automated generation of an annotated bibliography in LaTeX using bibliographic information in a BibTeX file (NOT biblatex).
 The *AnnoBib.tex* file is the master file.
-It uses the ** field in the BibTeX entry in *cited.bib*.
-Its style is set by *plain-.bst*, which must be present unless this file is stored in your library of files for LaTeX on your local computer.
+It uses the *annote* field in the BibTeX entry in *cited.bib*.
+Its style is set by *apacan-.bst*, which must be present unless this file is stored in your library of files for LaTeX on your local computer.
 
 To write out the cited bib entries in a manuscript that come from *global.bib*, use the command line program **bibtool** with the main.tex file's corresponding main.aux file:
  
