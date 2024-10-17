@@ -45,11 +45,23 @@ The result is visually pleasing to me.
 Surprisingly, space will flank display math, figures and tables.
 
 ### Annote fields with multiple paragraphs in BibLaTeX
-You may be stuck using BibLaTeX if you use typst.
-I have found no solution to this problem for BibLaTeX where biber converts blank lines into whitespace early in the processing of the bib file.
+You may be using BibLaTeX if you use typst because typst does not support BibTeX.
+BibLaTeX uses different tools then BibTeX to generate the bibliography.
+Its tool `biber` converts blank lines into whitespace early in the processing of the bib file.
 You can start new paragraphs separated by blank lines in an [imported tex file](https://tex.stackexchange.com/questions/488913/how-to-embed-a-review-in-biblatex) that stores a single annotation.
-However, the blank line will be lost. 
+However, the blank line will be lost in the exported PDF.
+
+You can use the chicago package, which has added support for [annotated bibliographies](https://tex.stackexchange.com/questions/183743/why-cant-i-get-annotations-in-the-bibliography-here/183917#183917).
+You can add `\par` after each paragraph to break the text into paragraphs, but there will be no spacing between paragraphs.
 The result is visually displeasing to me.
+<img width="965" alt="par" src="https://github.com/user-attachments/assets/50e3c510-408a-4eac-89f8-fd8d158ce474">
+
+A work around is to replace the `\par` with display `$$ $$`. 
+This will give a wider than desired paragraph spacing, but it is better than no blank lines.
+
+<img width="970" alt="emptyDisplayMath" src="https://github.com/user-attachments/assets/68fef0c3-7691-4978-bea8-e07f8a145ab4">
+
+
 
 ## Colored annotations
 
