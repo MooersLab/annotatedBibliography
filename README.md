@@ -3,10 +3,18 @@
 
 # Annotated bibliography template in LaTeX for specific writing projects
 
+## Purpose
+Generate lists of cited papers with annotations following each citation. This document is useful when writing review articles.
+
+## How it works
+
 These files support the automated generation of an annotated bibliography in LaTeX using bibliographic information in a BibTeX file (NOT BibLaTeX).
 The *AnnoBib.tex* file is the master file.
 It uses the *annote* field in the BibTeX entry in *cited.bib*.
 Its style is set by *apacannx.bst*, which must be present unless this file is stored in your library of files for LaTeX on your local computer.
+
+
+## Generate a bib file with only cited references
 
 To write out the cited bib entries in a manuscript from *global.bib*, use the command line program **bibtool** with the main.tex file's corresponding main.aux file:
  
@@ -24,16 +32,21 @@ bibtool --preserve.key.case=on -x main.aux > cited.bib
 
 Bibtool is distributed with LaTeX.
 
+## Writing the annotations
+
 Manually add *annote* fields to the *AnnoBibMyBDA.bib* file and enter your annotations.
 Or, if you are more disciplined, you can add the *annote* fields in a *global.bib* file and repeat the extraction of the cited entries when you are finished.
 All entries in `cited.bib` will be used to create the annotated bibliography regardless of whether the *annote* field is present.
 
-I store these files in a *annotatedBibliography* subfolder in my writing project's folder.
+The annote field does not have to be limited to a single paragraph summary like in the one you made in the sixth grade.
+The annotation field can contain figures, tables, coding listings, and equations.
+
+I store these files in an *annotatedBibliography* subfolder in my writing project's folder.
 These files work on Overleaf, too.
 
 ## Alternative bibliographic styles
 
-Alternatively, you can use the *IEEEannot.bst* bibliography style file which returns numbered entries in alphabetic order.
+Alternatively, you can use the *IEEEannot.bst* bibliography style file that returns numbered entries in alphabetic order.
 
 ## Annote fields with multiple paragraphs
 
@@ -41,17 +54,16 @@ I have found no support for blank lines between paragraphs in the annotation.
 I wrap each paragraph in `\par{\noindent   .... }` to have the paragraphs printed in block format.
 I insert `\vspace{10pt}` between paragraphs to generate a blank line between paragraphs.
 The result is visually pleasing to me.
-
-Surprisingly, space will flank display math, figures and tables.
+Surprisingly, space will flank display math, figures, code listings, and tables.
 
 ### Annote fields with multiple paragraphs in BibLaTeX
-You may be using BibLaTeX if you use typst because typst does not support BibTeX.
+You may be using BibLaTeX if you use typist because typist does not support BibTeX.
 BibLaTeX uses different tools then BibTeX to generate the bibliography.
 Its tool `biber` converts blank lines into whitespace early in the processing of the bib file.
 You can start new paragraphs separated by blank lines in an [imported tex file](https://tex.stackexchange.com/questions/488913/how-to-embed-a-review-in-biblatex) that stores a single annotation.
 However, the blank line will be lost in the exported PDF.
 
-You can use the chicago package, which has added support for [annotated bibliographies](https://tex.stackexchange.com/questions/183743/why-cant-i-get-annotations-in-the-bibliography-here/183917#183917).
+You can use the biblatex-chicago package, which has added support for [annotated bibliographies](https://tex.stackexchange.com/questions/183743/why-cant-i-get-annotations-in-the-bibliography-here/183917#183917).
 You can add `\par` after each paragraph to break the text into paragraphs, but there will be no spacing between paragraphs.
 The result is visually displeasing to me.
 <img width="965" alt="par" src="https://github.com/user-attachments/assets/50e3c510-408a-4eac-89f8-fd8d158ce474">
