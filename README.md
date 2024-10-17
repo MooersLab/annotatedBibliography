@@ -35,17 +35,20 @@ These files work on Overleaf, too.
 
 Alternatively, you can use the *IEEEannot.bst* bibliography style file which returns numbered entries in alphabetic order.
 
-##  Fields with multiple paragraphs
+## Annote fields with multiple paragraphs
 
 I have found no support for blank lines between paragraphs in the annotation.
 I wrap each paragraph in `\par{\noindent   .... }` to have the paragraphs printed in block format.
 I insert `\vspace{10pt}` between paragraphs to generate a blank line between paragraphs.
+The result is visually pleasing to me.
 
 Surprisingly, space will flank display math, figures and tables.
 
+### Annote fields with multiple paragraphs in BibLaTeX
 I have found no solution to this problem for BibLaTeX where biber converts blank lines into whitespace early in the processing of the bib file.
 You can start new paragraphs separated by blank lines in an [imported tex file](https://tex.stackexchange.com/questions/488913/how-to-embed-a-review-in-biblatex) that stores a single annotation.
 However, the blank line will be lost. 
+The result is visually displeasing to me.
 
 ## Colored annotations
 
@@ -84,6 +87,7 @@ You can include lists, display math, computer code blocks, figures, and tables i
 | Version 0.2 | Added Update table to README.md                       | 2024 April 7    |
 | Version 0.3 | Edit the README.md heavily.                           | 2024 April 17   |
 | Version 0.4 | Edit the README.md heavily.                           | 2024 October 8   |
+| Version 0.5 | Edit the README.md heavily.                           | 2024 October 16   |
 
 ## Sources of Funding
 
