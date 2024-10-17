@@ -3,12 +3,12 @@
 
 # Annotated bibliography template in LaTeX for specific writing projects
 
-These files support the automated generation of an annotated bibliography in LaTeX using bibliographic information in a BibTeX file (NOT biblatex).
+These files support the automated generation of an annotated bibliography in LaTeX using bibliographic information in a BibTeX file (NOT BibLaTeX).
 The *AnnoBib.tex* file is the master file.
 It uses the *annote* field in the BibTeX entry in *cited.bib*.
 Its style is set by *apacannx.bst*, which must be present unless this file is stored in your library of files for LaTeX on your local computer.
 
-To write out the cited bib entries in a manuscript that come from *global.bib*, use the command line program **bibtool** with the main.tex file's corresponding main.aux file:
+To write out the cited bib entries in a manuscript from *global.bib*, use the command line program **bibtool** with the main.tex file's corresponding main.aux file:
  
 Run the following code to generate a bib file of the papers cited in a manuscript. 
 Note that main.tex is the manuscript file. 
@@ -40,6 +40,12 @@ Alternatively, you can use the *IEEEannot.bst* bibliography style file which ret
 I have found no support for blank lines between paragraphs in the annotation.
 I wrap each paragraph in `\par{\noindent   .... }` to have the paragraphs printed in block format.
 I insert `\vspace{10pt}` between paragraphs to generate a blank line between paragraphs.
+
+Surprisingly, space will flank display math, figures and tables.
+
+I have found no solution to this problem for BibLaTeX where biber converts blank lines into whitespace early in the processing of the bib file.
+You can start new paragraphs separated by blank lines in an [imported tex file](https://tex.stackexchange.com/questions/488913/how-to-embed-a-review-in-biblatex) that stores a single annotation.
+However, the blank line will be lost. 
 
 ## Colored annotations
 
