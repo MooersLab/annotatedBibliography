@@ -45,6 +45,7 @@ The result is visually pleasing to me.
 Surprisingly, space will flank display math, figures and tables.
 
 ### Annote fields with multiple paragraphs in BibLaTeX
+You may be stuck using BibLaTeX if you use typst.
 I have found no solution to this problem for BibLaTeX where biber converts blank lines into whitespace early in the processing of the bib file.
 You can start new paragraphs separated by blank lines in an [imported tex file](https://tex.stackexchange.com/questions/488913/how-to-embed-a-review-in-biblatex) that stores a single annotation.
 However, the blank line will be lost. 
