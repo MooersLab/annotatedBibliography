@@ -1,4 +1,4 @@
-![Version](https://img.shields.io/static/v1?label=annotatedBibliography&message=0.4&color=brightcolor)
+![Version](https://img.shields.io/static/v1?label=annotatedBibliography&message=0.6&color=brightcolor)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 # Annotated bibliography template in LaTeX for specific writing projects
@@ -141,6 +141,8 @@ You can include lists, display math, computer code blocks, figures, and tables i
 | Version 0.3 | Edit the README.md heavily.                           | 2024 April 17   |
 | Version 0.4 | Edit the README.md heavily.                           | 2024 October 8   |
 | Version 0.5 | Edit the README.md heavily.                           | 2024 October 16   |
+| Version 0.6 | Added running title to header of AnnoBib.tex.    | 2024 October 24   |
+
 
 ## Sources of Funding
 
