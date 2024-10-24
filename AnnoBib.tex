@@ -12,6 +12,16 @@
 \usepackage[letterpaper, total={7in, 9in}]{geometry}
 \usepackage{apacite}
 
+% Add running titles to avoid mixing up paper versions of two or more unstapled documents stored together.
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\usepackage{lastpage}
+\fancyhf{} % Clear header/footer
+\fancyhead[L]{Student, ..., and Mooers}
+\fancyhead[C]{Manuscript template in LaTeX, printed: \today}
+\fancyhead[R]{\thepage\ / \pageref{LastPage}}
+\renewcommand{\headrulewidth}{1pt} % set to 0pt to hide headrule
+
 
 \begin{document}
 
