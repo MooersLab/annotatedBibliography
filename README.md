@@ -34,7 +34,7 @@ Bibtool is distributed with LaTeX.
 
 ## Writing the annotations
 
-Manually add *annote* fields to the *AnnoBibMyBDA.bib* file and enter your annotations.
+If you are using BibTeX, manually add `annote` fields to the *AnnoBibMyBDA.bib* file and enter your annotations.
 Or, if you are more disciplined, you can add the *annote* fields in a *global.bib* file and repeat the extraction of the cited entries when you are finished.
 All entries in `cited.bib` will be used to create the annotated bibliography regardless of whether the *annote* field is present.
 
@@ -44,20 +44,49 @@ The annotation field can contain figures, tables, coding listings, and equations
 I store these files in an *annotatedBibliography* subfolder in my writing project's folder.
 These files work on Overleaf, too.
 
+If you are using BibLaTeX, manually add `annotation` fields to the *AnnoBibMyBDA.bib*.
+
+For journal article entries, the difference from BibTeX is that BibLaTeX uses a `journaltitle` field insead of a `journal` field.
+
+Note that you can use JabRef to export a BibTeX library to a BibLaTeX library.
+Use can also use the R statistical package for this purpose.
+See below.
+
+## Protocol for BibTeX to BibLaTeX library conversion with R
+
+Note that you must supply the full file paths.
+Also, note the order of the arguments to bibConvert.
+The third argument is the file type of the first.
+The fourth argument is the file type of the second argument.
+
+
+1. Start R-Studio
+2. Run the following code after editing the file paths:
+
+
+```R
+library(devtools)
+install_github("GeoBosh/rbibutils")
+library(rbibutils)
+bibConvert("/Users/blaine/Documents/global.bib", "/Users/blaine/Documents/globalBiblatex.bib", "bibtex", "biblatex")
+````
+
+Of course, flip the order of the arguments to convert from BibLaTeX to BibTeX.
+
 ## Alternative bibliographic styles
 
 Alternatively, you can use the *IEEEannot.bst* bibliography style file that returns numbered entries in alphabetic order.
 
-## Annote fields with multiple paragraphs
+## Annote fields with multiple paragraphs in BibTeX
 
-I have found no support for blank lines between paragraphs in the annotation.
+I have found no support for blank lines between paragraphs in the annotation stored  in the annote field of BibTeX entries.
 I wrap each paragraph in `\par{\noindent   .... }` to have the paragraphs printed in block format.
 I insert `\vspace{10pt}` between paragraphs to generate a blank line between paragraphs.
 The result is visually pleasing to me.
-Surprisingly, space will flank display math, figures, code listings, and tables.
+Space will flank display math, figures, code listings, and tables.
 
-### Annote fields with multiple paragraphs in BibLaTeX
-You may be using BibLaTeX if you use typist because typist does not support BibTeX.
+## Annotation fields with multiple paragraphs in BibLaTeX
+You may be using BibLaTeX if you use typst because typst does not support BibTeX.
 BibLaTeX uses different tools then BibTeX to generate the bibliography.
 Its tool `biber` converts blank lines into whitespace early in the processing of the bib file.
 You can start new paragraphs separated by blank lines in an [imported tex file](https://tex.stackexchange.com/questions/488913/how-to-embed-a-review-in-biblatex) that stores a single annotation.
@@ -72,7 +101,6 @@ A work around is to replace the `\par` with display `$$ $$`.
 This will give a wider than desired paragraph spacing, but it is better than no blank lines.
 
 <img width="970" alt="emptyDisplayMath" src="https://github.com/user-attachments/assets/68fef0c3-7691-4978-bea8-e07f8a145ab4">
-
 
 
 ## Colored annotations
